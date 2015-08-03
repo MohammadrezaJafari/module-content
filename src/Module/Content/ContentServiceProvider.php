@@ -18,8 +18,10 @@ class ContentServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('module/content');
-	}
+        require_once __DIR__.'/../../../routes.php';
+
+        $this->package('module/content');
+    }
 
 	/**
 	 * Register the service provider.
